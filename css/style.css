@@ -44,7 +44,7 @@ a{
 .header-menu .search-responsive-container{
     display: none;
     padding: 8px;
-
+    border-bottom: 1.5px solid #cccccc;
 }
 
 .header-menu .search-responsive-container input{
