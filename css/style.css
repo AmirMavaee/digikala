@@ -201,5 +201,11 @@ a{
 }
 
 .header-stories-swiper .swiper-slide{
-    width: auto !important;
+    width: 82px !important;
+}
+
+.header-stories-swiper .swiper-slide .story-text{
+    font-size: 11px;
+    line-height: 1.8;
+    color: #23254e;
 }

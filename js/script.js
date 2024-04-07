@@ -5,8 +5,8 @@ function swiperSpaceBetween(){
     const headerStoriesSwiper = new Swiper(".header-stories-swiper", {
       slidesPerView: "auto",
       spaceBetween: 14,
-      freeMode: true, // Enable free mode
-      freeModeSticky: true, // Stick to the slides
+      freeMode: true,
+      freeModeSticky: true,
       navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
@@ -16,8 +16,8 @@ function swiperSpaceBetween(){
     const headerStoriesSwiper = new Swiper(".header-stories-swiper", {
       slidesPerView: "auto",
       spaceBetween: 26.5,
-      freeMode: true, // Enable free mode
-      freeModeSticky: true, // Stick to the slides
+      freeMode: true,
+      freeModeSticky: true,
       navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
