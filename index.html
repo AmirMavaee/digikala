@@ -13,79 +13,238 @@
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/responsive.css" />
     <title></title>
   </head>
   <body>
     <header class="header">
       <picture>
-        <source srcset="./assets/mobileimage.jpg" media="(max-width: 1023px)"/>
-        <source srcset="./assets/desktopimage.gif" media="(min-width: 1024px)"/>
+        <source srcset="./assets/mobileimage.jpg" media="(max-width: 1023px)" />
+        <source
+          srcset="./assets/desktopimage.gif"
+          media="(min-width: 1024px)"
+        />
         <img src="./assets/desktopimage.gif" alt="Image" class="w-100" />
       </picture>
 
       <div class="header-menu">
         <section class="search-responsive-container position-relative">
-            <img src="./assets/search.svg" alt="search-icon" class="search-icon position-absolute">
-            <input type="text" class="w-100 border-0 rounded-2" placeholder="جستجو در">
-            <img src="./assets/digi.svg" alt="دیجی کالا" class="logo-responsive position-absolute">
+          <img
+            src="./assets/search.svg"
+            alt="search-icon"
+            class="search-icon position-absolute"
+          />
+          <input
+            type="text"
+            class="w-100 border-0 rounded-2"
+            placeholder="جستجو در"
+          />
+          <img
+            src="./assets/digi.svg"
+            alt="دیجی کالا"
+            class="logo-responsive position-absolute"
+          />
         </section>
         <section class="search-container d-flex align-items-center">
           <div class="logo-header">
             <img src="./assets/logo.svg" alt="logo" />
           </div>
           <div class="search-box position-relative ms-3 flex-grow-1">
-            <img src="./assets/search.svg" alt="search-icon" class="search-icon position-absolute">
-            <input type="text" placeholder="جستجو" class="rounded-2 border-0"/>
+            <img
+              src="./assets/search.svg"
+              alt="search-icon"
+              class="search-icon position-absolute"
+            />
+            <input type="text" placeholder="جستجو" class="rounded-2 border-0" />
           </div>
           <div class="signIn d-flex justify-content-center align-items-center">
-            <a href="#" class="d-flex justify-content-center align-items-center text-black border rounded-3">
-                <img src="./assets/login.svg" alt="login" class="me-2">
-                ورود | ثبت نام
+            <a
+              href="#"
+              class="d-flex justify-content-center align-items-center text-black border rounded-3"
+            >
+              <img src="./assets/login.svg" alt="login" class="me-2" />
+              ورود | ثبت نام
             </a>
             <a href="#">
-                <img src="./assets/shopping-cart.svg" alt="shopping-cart">
+              <img src="./assets/shopping-cart.svg" alt="shopping-cart" />
             </a>
           </div>
         </section>
         <section class="menu d-flex align-items-center">
-            <div class="menu-container flex-grow-1">
-                <ul class="menu-item d-flex m-0 p-0">
-                    <li class="ps-0"><a href="#" class="text-dark">
-                        <img src="./assets/menu.svg" alt="menu">
-                        دسته‌بندی کالاها
-                    </a></li>
-                    <li><a href="#">
-                        <img src="./assets/amazing.svg" alt="amazing">
-                        شگفت‌انگیزها
-                    </a></li>
-                    <li><a href="#">
-                        <img src="./assets/fresh.svg" alt="fresh">
-                        سوپرمارکت
-                    </a></li>
-                    <li><a href="#">
-                        <img src="./assets/giftcart.svg" alt="giftcart">
-                        کارت هدیه
-                    </a></li>
-                    <li><a href="#">
-                        <img src="./assets/hot.svg" alt="trend">
-                        پرفروش‌ترین‌ها
-                    </a></li>
-                    <li><a href="#">
-                        <img src="./assets/discount.svg" alt="discount">
-                        تخفیف‌ها و پیشنهادها
-                    </a></li>
-                    <li class="position-relative"><a href="#">سوالی دارید؟</a></li>
-                    <li><a href="#">در دیجی‌کالا بفروشید!</a></li>
-                </ul>
-            </div>
-            <div class="location">
-                <span>
-                    <img class="me-1" src="./assets/location.svg" alt="location">
-                    لطفا شهر خود را انتخاب کنید
-                </span>
-            </div>
+          <div class="menu-container flex-grow-1">
+            <ul class="menu-item d-flex m-0 p-0">
+              <li class="ps-0">
+                <a href="#" class="text-dark">
+                  <img src="./assets/menu.svg" alt="menu" />
+                  دسته‌بندی کالاها
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="./assets/amazing.svg" alt="amazing" />
+                  شگفت‌انگیزها
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="./assets/fresh.svg" alt="fresh" />
+                  سوپرمارکت
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="./assets/giftcart.svg" alt="giftcart" />
+                  کارت هدیه
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="./assets/hot.svg" alt="trend" />
+                  پرفروش‌ترین‌ها
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="./assets/discount.svg" alt="discount" />
+                  تخفیف‌ها و پیشنهادها
+                </a>
+              </li>
+              <li class="position-relative"><a href="#">سوالی دارید؟</a></li>
+              <li><a href="#">در دیجی‌کالا بفروشید!</a></li>
+            </ul>
+          </div>
+          <div class="location">
+            <span>
+              <img class="me-1" src="./assets/location.svg" alt="location" />
+              لطفا شهر خود را انتخاب کنید
+            </span>
+          </div>
         </section>
+      </div>
+      <div class="header-stories">
+        <div class="container-2xl">
+            <div class="swiper header-stories-swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="story-image d-flex justify-content-center align-items-center rounded-circle">
+                        <img src="./assets/p1.jpg" alt="person1" class="rounded-circle">
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="story-image d-flex justify-content-center align-items-center rounded-circle">
+                        <img src="./assets/p2.jpg" alt="person1" class="rounded-circle">
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="story-image d-flex justify-content-center align-items-center rounded-circle">
+                        <img src="./assets/p3.jpg" alt="person1" class="rounded-circle">
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="story-image d-flex justify-content-center align-items-center rounded-circle">
+                        <img src="./assets/p4.jpg" alt="person1" class="rounded-circle">
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="story-image d-flex justify-content-center align-items-center rounded-circle">
+                        <img src="./assets/p5.jpg" alt="person1" class="rounded-circle">
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="story-image d-flex justify-content-center align-items-center rounded-circle">
+                        <img src="./assets/p6.jpg" alt="person1" class="rounded-circle">
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="story-image d-flex justify-content-center align-items-center rounded-circle">
+                        <img src="./assets/p7.jpg" alt="person1" class="rounded-circle">
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="story-image d-flex justify-content-center align-items-center rounded-circle">
+                        <img src="./assets/p8.jpg" alt="person1" class="rounded-circle">
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="story-image d-flex justify-content-center align-items-center rounded-circle">
+                        <img src="./assets/p10.jpg" alt="person1" class="rounded-circle">
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="story-image d-flex justify-content-center align-items-center rounded-circle">
+                        <img src="./assets/p9.jpg" alt="person1" class="rounded-circle">
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="story-image d-flex justify-content-center align-items-center rounded-circle">
+                        <img src="./assets/p11.jpg" alt="person1" class="rounded-circle">
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="story-image d-flex justify-content-center align-items-center rounded-circle">
+                        <img src="./assets/p12.jpg" alt="person1" class="rounded-circle">
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="story-image d-flex justify-content-center align-items-center rounded-circle">
+                        <img src="./assets/p13.jpg" alt="person1" class="rounded-circle">
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="story-image d-flex justify-content-center align-items-center rounded-circle">
+                        <img src="./assets/p14.jpg" alt="person1" class="rounded-circle">
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="story-image d-flex justify-content-center align-items-center rounded-circle">
+                        <img src="./assets/p15.jpg" alt="person1" class="rounded-circle">
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="story-image d-flex justify-content-center align-items-center rounded-circle">
+                        <img src="./assets/p16.jpg" alt="person1" class="rounded-circle">
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="story-image d-flex justify-content-center align-items-center rounded-circle">
+                        <img src="./assets/p17.jpg" alt="person1" class="rounded-circle">
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="story-image d-flex justify-content-center align-items-center rounded-circle">
+                        <img src="./assets/p18.jpg" alt="person1" class="rounded-circle">
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="story-image d-flex justify-content-center align-items-center rounded-circle">
+                        <img src="./assets/p19.jpg" alt="person1" class="rounded-circle">
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="story-image d-flex justify-content-center align-items-center rounded-circle">
+                        <img src="./assets/p20.jpg" alt="person1" class="rounded-circle">
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="story-image d-flex justify-content-center align-items-center rounded-circle">
+                        <img src="./assets/p21.jpg" alt="person1" class="rounded-circle">
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="story-image d-flex justify-content-center align-items-center rounded-circle">
+                        <img src="./assets/p22.jpg" alt="person1" class="rounded-circle">
+                    </div>
+                  </div>
+
+                </div>
+                <div class="swiper-button-next">
+                    <img src="./assets/leftArrow.svg" alt="left Arrow" class="bg-white rounded-circle">
+                </div>
+                <div class="swiper-button-prev">
+                    <img src="./assets/rightArrow.svg" alt="Right Arrow" class="bg-white rounded-circle">
+                </div>
+              </div>
+        </div>
       </div>
     </header>
 
