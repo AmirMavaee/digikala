@@ -99,7 +99,7 @@ a{
 }
 
 .header-menu .search-container .search-box .search-input-container{
-    padding: 10px;
+    padding: 0 10px 10px 10px;
     /* top: 30px !important; */
     max-width: 600px;
     box-shadow: 0 1px 1px rgba(0, 0, 0, .14), 0 4px 4px rgba(0, 0, 0, .1);
@@ -119,7 +119,7 @@ a{
 
 .header-menu .search-container .search-box  .search-input-container > input{
     width: 576px !important;
-    padding: 10px 45px 12px 10px;
+    padding: 10px 45px 10px 10px;
 }
 
 .header-menu .search-container .search-box  .search-input-container .search-box-icon{
@@ -149,7 +149,7 @@ a{
 }
 
 .header-menu .search-container .search-box .search-input-container .search-close-icon{
-    top: 21px;
+    top: 13px;
     left: 10px;
     cursor: pointer;
 }
