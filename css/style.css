@@ -16,7 +16,7 @@
 }
 
 body {
-    height: 1000px;
+    /* height: 1000px; */
     font-family: "iranyekan";
     box-sizing: border-box;
 }
@@ -176,7 +176,9 @@ a{
 }
 
 .header .header-stories .header-stories-swiper .swiper-button-next img , 
-.header .header-stories .header-stories-swiper .swiper-button-prev img{
+.header .header-stories .header-stories-swiper .swiper-button-prev img , 
+.main .header-slideShow-container .header-slideShow .swiper-button-next img ,
+.main .header-slideShow-container .header-slideShow .swiper-button-prev img {
     padding: 9px;
     border: 1px solid #e0e0e2;
 }
@@ -192,7 +194,9 @@ a{
 }
 
 .header .header-stories .header-stories-swiper .swiper-button-next::after ,
-.header .header-stories .header-stories-swiper .swiper-button-prev::after{
+.header .header-stories .header-stories-swiper .swiper-button-prev::after , 
+.main .header-slideShow-container .header-slideShow .swiper-button-next::after ,
+.main .header-slideShow-container .header-slideShow .swiper-button-prev::after{
     display: none;
 }
 
@@ -208,4 +212,57 @@ a{
     font-size: 11px;
     line-height: 1.8;
     color: #23254e;
+}
+
+
+/* main start  */
+
+.main .header-slideShow-container .header-slideShow{
+    height: 403px;
+}
+
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, 
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet{
+    width: 4px;
+    height: 4px;
+    transition: width .2s ease-in-out;
+}
+
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet-active, 
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet-active{
+    background-color: #fff;
+    border-radius: 9999px;
+    height: 6px;
+    -webkit-transform: translateY(1px);
+    transform: translateY(1px);
+    width: 16px;
+}
+
+.main .header-slideShow-container .header-slideShow .header-slideShow-navigation{
+    position: absolute;
+    bottom: 62px;
+    right: 5rem;
+}
+
+.main .header-slideShow-container .header-slideShow .header-slideShow-navigation .swiper-button-next{
+    left: auto;
+    right: 10px;
+    opacity: 0;
+    visibility: hidden;
+    transition: .15s linear;
+}
+
+.main .header-slideShow-container .header-slideShow .header-slideShow-navigation .swiper-button-prev{
+    right: auto;
+    left: 10px;
+    opacity: 0;
+    visibility: hidden;
+    transition: .15s linear;
+}
+
+.main .header-slideShow-container .header-slideShow:hover .header-slideShow-navigation .swiper-button-prev,
+.main .header-slideShow-container .header-slideShow:hover .header-slideShow-navigation .swiper-button-next{
+    opacity: 1;
+    visibility: visible;
+    transition: .15s linear;
 }

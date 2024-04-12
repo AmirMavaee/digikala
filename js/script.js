@@ -25,3 +25,16 @@ function swiperSpaceBetween(){
     });
   }
 } 
+
+
+
+const headerSlidShow = new Swiper(".header-slideShow", {
+  loop:true,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  pagination: {
+    el: ".swiper-pagination",
+  },
+});
