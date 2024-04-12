@@ -8,9 +8,6 @@
     .header .menu .menu-item li:nth-child(6){
         display: none;
     } 
-    .main .header-slideShow-container .header-slideShow{
-        height: 303px;
-    }
 }
 
 @media (max-width : 1023px) {
@@ -30,7 +27,7 @@
         display: none;
     }
     .header-stories{
-        padding: 16px 0;
+        padding: 16px 0 10px 0;
     }
     .container-2xl{
         padding-left: 0;
@@ -47,8 +44,5 @@
     }
     .header-stories-swiper .swiper-slide .story-text{
         font-size: 10px;
-    }
-    .main .header-slideShow-container .header-slideShow{
-        height: 268px;
     }
 }
