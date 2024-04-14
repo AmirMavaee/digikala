@@ -60,7 +60,6 @@ const selectInput = document.querySelector(".header-menu .search-container .sear
 const selectBox = document.querySelector(".header-menu .search-container .search-box .search-input-container");
 const selectBoxInput = document.querySelector(".header-menu .search-container .search-box .search-input-container > input");
 const selectBoxClear = document.querySelector(".header-menu .search-container .search-box .search-input-container .search-close-icon");
-const selectBoxMobile = document.querySelector(".header-menu .search-responsive-container .search-input-responsive-container")
 
 
 window.addEventListener("resize" , showSearchbar)
@@ -108,6 +107,7 @@ function showSearchBarDesktop(){
 function showSearchBarMobile(){
   selectBox.classList.remove("show");
 
+  const selectBoxMobile = document.querySelector(".header-menu .search-responsive-container .search-input-responsive-container")
   const selectInputMobile = document.querySelector(".header-menu .search-responsive-container > .select-input-mobile");
   const selectBoxMobileClose = document.querySelector(".header-menu .search-responsive-container .search-input-responsive-container .search-box-icon");
   const selectBoxMobileInput = document.querySelector(".header-menu .search-responsive-container .search-input-responsive-container .search-input");
@@ -132,7 +132,7 @@ function showSearchBarMobile(){
   })
 
   selectBoxMobileInput.addEventListener("click" , function(e){
-    e.preventDefault();
+    this.focus();
   })
 
   selectBoxMobileClear.classList.add("d-none");
