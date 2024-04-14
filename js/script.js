@@ -60,6 +60,7 @@ const selectInput = document.querySelector(".header-menu .search-container .sear
 const selectBox = document.querySelector(".header-menu .search-container .search-box .search-input-container");
 const selectBoxInput = document.querySelector(".header-menu .search-container .search-box .search-input-container > input");
 const selectBoxClear = document.querySelector(".header-menu .search-container .search-box .search-input-container .search-close-icon");
+const selectBoxMobile = document.querySelector(".header-menu .search-responsive-container .search-input-responsive-container")
 
 
 window.addEventListener("resize" , showSearchbar)
@@ -67,6 +68,7 @@ showSearchbar();
 function showSearchbar(){
   document.body.classList.remove("bg-dark-50");
   document.body.classList.remove("bg-dark-50-mobile");
+  selectBoxMobile.classList.add("d-none");
   if(this.screen.width <= 1023){
     showSearchBarMobile()
   }else{
@@ -107,14 +109,11 @@ function showSearchBarDesktop(){
 function showSearchBarMobile(){
   selectBox.classList.remove("show");
 
-  const selectBoxMobile = document.querySelector(".header-menu .search-responsive-container .search-input-responsive-container")
   const selectInputMobile = document.querySelector(".header-menu .search-responsive-container > .select-input-mobile");
   const selectBoxMobileClose = document.querySelector(".header-menu .search-responsive-container .search-input-responsive-container .search-box-icon");
   const selectBoxMobileInput = document.querySelector(".header-menu .search-responsive-container .search-input-responsive-container .search-input");
   const selectBoxMobileClear = document.querySelector(".header-menu .search-responsive-container .search-input-responsive-container .search-close-icon");
   console.log(selectBoxMobileInput);
-  // selectBoxMobile.classList.add("d-none");
-
 
   selectInputMobile.addEventListener("click" , function(){
     selectBoxMobile.classList.remove("d-none");
