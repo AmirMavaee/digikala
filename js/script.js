@@ -143,3 +143,24 @@ function showSearchBarMobile(){
     this.classList.add("d-none");
   });
 }
+
+
+// add style when hover on navbar
+const navbar = document.querySelector(".header .menu .menu-item");
+const navbarItem = document.querySelectorAll(".header .menu .menu-item li");
+const navbarItemBorder = document.querySelector(".header .menu .border-bottom-menu-item");
+
+navbarItem.forEach(function(item){
+  item.addEventListener('mouseenter' , function(){
+    navbarItemBorder.style.width = "0";
+    setTimeout(() => {
+      const itemRect = item.getBoundingClientRect();
+      const newLeft = itemRect.left + 'px';
+      navbarItemBorder.style.left = newLeft;
+      navbarItemBorder.style.width = item.clientWidth + "px";
+    }, 200);
+  })
+  item.addEventListener("mouseleave" , function(){
+    navbarItemBorder.style.width = "0";
+  })
+})
