@@ -128,7 +128,7 @@ function showSearchBarMobile(){
     }, 150);
     setTimeout(()=>{
       selectBoxMobile.classList.add("d-none");
-    },1000)
+    },800)
   })
 
   selectBoxMobileClear.classList.add("d-none");
