@@ -20,7 +20,8 @@ body {
     font-family: "iranyekan";
     box-sizing: border-box;
 }
-body.bg-dark-50{
+body.bg-dark-50 , 
+body.bg-dark-50-mobile{
     overflow: hidden;
     position: relative;
 }
@@ -33,6 +34,17 @@ body.bg-dark-50::after{
     right: 0;
     height: calc(100% - 108px);
     background-color: rgba(0, 0, 0, .5);
+    z-index: 10;
+}
+
+body.bg-dark-50-mobile::after{
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, .5);
+    height: 100% ;
+    width: 100%;
     z-index: 10;
 }
 
@@ -73,6 +85,7 @@ a{
     background-color: #f0f0f1;
     font-size: 12px;
     padding: 13px 40px 13px 13px;
+    cursor: default;
 }
 
 .header-menu .search-responsive-container .logo-responsive{
@@ -98,9 +111,38 @@ a{
     margin: 0 -2px 0 4px;
 }
 
-.header-menu .search-container .search-box .search-input-container{
+.header-menu .search-responsive-container .search-input-responsive-container{
+    width: 100%;
+    height: 100vh;
+    z-index: 20;
+    padding: 10px;
+    transform: translateY(100%);
+    transition: .15s linear;
+}
+
+.header-menu .search-responsive-container .search-input-responsive-container.show{
+    transform: translateY(0);
+    transition: .15s linear;
+}
+
+.header-menu .search-responsive-container .search-input-responsive-container > input{
+    padding-top: 10px;
+    padding-right: 48px;
+    color: #81858b;
+    width: 100%;
+}
+
+.header-menu .search-responsive-container .search-input-responsive-container > input::placeholder{
+    font-size: .7rem;
+}
+
+.header-menu .search-responsive-container .search-input-responsive-container .search-box-icon{
+    margin: 20px;
+}
+
+.header-menu .search-container .search-box .search-input-container , 
+.header-menu .search-responsive-container .search-input-container {
     padding: 0 10px 10px 10px;
-    /* top: 30px !important; */
     max-width: 600px;
     box-shadow: 0 1px 1px rgba(0, 0, 0, .14), 0 4px 4px rgba(0, 0, 0, .1);
     border: 1px solid rgba(0, 0, 0, .1);
@@ -127,14 +169,21 @@ a{
     margin: 10px 8px 0 0;
 }
 
-.header-menu .search-container .search-box .search-input-container h6{
+.header-menu .search-container .search-box .search-input-container h6 , 
+.header-menu .search-responsive-container .search-input-responsive-container h6{
     padding: 2rem 8px 0 0;
     margin-bottom: .75rem;
     position: relative;
     font-size: .95rem;
 }
 
-.header-menu .search-container .search-box .search-input-container h6::before{
+.header-menu .search-responsive-container .search-input-responsive-container h6{
+    font-size: 13px;
+    padding-top: 2.5rem;
+}
+
+.header-menu .search-container .search-box .search-input-container h6::before ,
+.header-menu .search-responsive-container .search-input-responsive-container h6::before{
     position: absolute;
     content: "";
     top: 0;
@@ -144,21 +193,32 @@ a{
     background-color: #19bfd3;
 }
 
-.header-menu .search-container .search-box .search-input-container h6 img{
+.header-menu .search-container .search-box .search-input-container h6 img , 
+.header-menu .search-responsive-container .search-input-responsive-container h6 img{
     margin-left: 10px;
 }
 
-.header-menu .search-container .search-box .search-input-container .search-close-icon{
+.header-menu .search-container .search-box .search-input-container .search-close-icon , 
+.header-menu .search-responsive-container .search-input-responsive-container .search-close-icon{
     top: 13px;
     left: 10px;
     cursor: pointer;
 }
 
-.header-menu .search-container .search-box .search-input-container .most-search-swiper .swiper-slide{
+.header-menu .search-responsive-container .search-input-responsive-container .search-close-icon{
+    top: 18px;
+}
+
+.header-menu .search-container .search-box .search-input-container .most-search-swiper .swiper-slide ,
+.header-menu .search-responsive-container .search-input-responsive-container .most-search-swiper .swiper-slide{
     width: auto !important;
     font-size: .85rem;
     padding: 10px;
     border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.header-menu .search-responsive-container .search-input-responsive-container .most-search-swiper .swiper-slide{
+    font-size: .75rem;
 }
 
 .header-menu .search-box input {

@@ -27,14 +27,72 @@
           />
           <input
             type="text"
-            class="w-100 border-0 rounded-2"
+            class="w-100 border-0 rounded-2 select-input-mobile"
             placeholder="جستجو در"
+            readonly
           />
           <img
             src="./assets/digi.svg"
             alt="دیجی کالا"
             class="logo-responsive position-absolute"
           />
+          <div
+            class="search-input-responsive-container position-absolute top-0 start-0 bg-white"
+          >
+            <img
+              src="./assets/rightArrowResponsive.svg"
+              alt="search-icon"
+              class="search-box-icon position-absolute"
+            />
+            <input
+              type="text"
+              placeholder="جستجو"
+              class="rounded-2 border-0 search-input bg-white"
+            />
+            <img
+              src="./assets/close.svg"
+              alt="close"
+              class="position-absolute search-close-icon"
+            />
+            <h6>
+              <span><img src="./assets/fire.svg" alt="fire" /></span>
+              <span>جستجوهای پرطرفدار</span>
+            </h6>
+            <div class="swiper most-search-swiper ps-5 my-2">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide rounded-pill">
+                  <a href="#">
+                    زیر انداز حصیری
+                    <img src="./assets/leftArrowSearch.svg" alt="Left Arrow" />
+                  </a>
+                </div>
+                <div class="swiper-slide rounded-pill">
+                  <a href="#">
+                    جلبک دریایی
+                    <img src="./assets/leftArrowSearch.svg" alt="Left Arrow" />
+                  </a>
+                </div>
+                <div class="swiper-slide rounded-pill">
+                  <a href="#">
+                    قرص ویتامین ای
+                    <img src="./assets/leftArrowSearch.svg" alt="Left Arrow" />
+                  </a>
+                </div>
+                <div class="swiper-slide rounded-pill">
+                  <a href="#">
+                    چمن زن
+                    <img src="./assets/leftArrowSearch.svg" alt="Left Arrow" />
+                  </a>
+                </div>
+                <div class="swiper-slide rounded-pill">
+                  <a href="#">
+                    لابلو
+                    <img src="./assets/leftArrowSearch.svg" alt="Left Arrow" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
         </section>
         <section class="search-container d-flex align-items-center">
           <div class="logo-header">
@@ -46,7 +104,12 @@
               alt="search-icon"
               class="search-box-icon position-absolute"
             />
-            <input type="text" placeholder="جستجو" class="rounded-2 border-0" readonly/>
+            <input
+              type="text"
+              placeholder="جستجو"
+              class="rounded-2 border-0"
+              readonly
+            />
             <div
               class="search-input-container position-absolute top-0 start-0 bg-white"
             >
@@ -60,41 +123,60 @@
                 placeholder="جستجو"
                 class="rounded-2 border-0 search-input bg-white"
               />
-              <img src="./assets/close.svg" alt="close" class="d-none position-absolute search-close-icon">
+              <img
+                src="./assets/close.svg"
+                alt="close"
+                class="d-none position-absolute search-close-icon"
+              />
               <h6>
                 <span><img src="./assets/fire.svg" alt="fire" /></span>
                 <span>جستجوهای پرطرفدار</span>
               </h6>
               <div class="swiper most-search-swiper ps-5 my-2">
                 <div class="swiper-wrapper">
-                  <div class="swiper-slide rounded-pill ">
+                  <div class="swiper-slide rounded-pill">
                     <a href="#">
-                        زیر انداز حصیری
-                        <img src="./assets/leftArrowSearch.svg" alt="Left Arrow">
+                      زیر انداز حصیری
+                      <img
+                        src="./assets/leftArrowSearch.svg"
+                        alt="Left Arrow"
+                      />
                     </a>
                   </div>
                   <div class="swiper-slide rounded-pill">
                     <a href="#">
-                        جلبک دریایی
-                        <img src="./assets/leftArrowSearch.svg" alt="Left Arrow">
+                      جلبک دریایی
+                      <img
+                        src="./assets/leftArrowSearch.svg"
+                        alt="Left Arrow"
+                      />
                     </a>
                   </div>
                   <div class="swiper-slide rounded-pill">
                     <a href="#">
-                        قرص ویتامین ای
-                        <img src="./assets/leftArrowSearch.svg" alt="Left Arrow">
+                      قرص ویتامین ای
+                      <img
+                        src="./assets/leftArrowSearch.svg"
+                        alt="Left Arrow"
+                      />
                     </a>
                   </div>
                   <div class="swiper-slide rounded-pill">
                     <a href="#">
-                        چمن زن
-                        <img src="./assets/leftArrowSearch.svg" alt="Left Arrow">
+                      چمن زن
+                      <img
+                        src="./assets/leftArrowSearch.svg"
+                        alt="Left Arrow"
+                      />
                     </a>
                   </div>
                   <div class="swiper-slide rounded-pill">
                     <a href="#">
-                        لابلو
-                        <img src="./assets/leftArrowSearch.svg" alt="Left Arrow">
+                      لابلو
+                      <img
+                        src="./assets/leftArrowSearch.svg"
+                        alt="Left Arrow"
+                      />
                     </a>
                   </div>
                 </div>
