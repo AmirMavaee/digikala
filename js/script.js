@@ -113,7 +113,7 @@ function showSearchBarMobile(){
   const selectBoxMobileInput = document.querySelector(".header-menu .search-responsive-container .search-input-responsive-container .search-input");
   const selectBoxMobileClear = document.querySelector(".header-menu .search-responsive-container .search-input-responsive-container .search-close-icon");
   console.log(selectBoxMobileInput);
-  selectBoxMobile.classList.add("d-none");
+  // selectBoxMobile.classList.add("d-none");
 
 
   selectInputMobile.addEventListener("click" , function(){
