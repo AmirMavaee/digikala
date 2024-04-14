@@ -112,7 +112,7 @@ function showSearchBarMobile(){
   const selectBoxMobileClose = document.querySelector(".header-menu .search-responsive-container .search-input-responsive-container .search-box-icon");
   const selectBoxMobileInput = document.querySelector(".header-menu .search-responsive-container .search-input-responsive-container .search-input");
   const selectBoxMobileClear = document.querySelector(".header-menu .search-responsive-container .search-input-responsive-container .search-close-icon");
-
+  console.log(selectBoxMobileInput);
   selectBoxMobile.classList.add("d-none");
 
 
@@ -129,6 +129,10 @@ function showSearchBarMobile(){
       document.body.classList.remove("bg-dark-50-mobile");
       selectBoxMobile.classList.add("d-none");
     }, 150);
+  })
+
+  selectBoxMobileInput.addEventListener("click" , function(e){
+    e.preventDefault();
   })
 
   selectBoxMobileClear.classList.add("d-none");
