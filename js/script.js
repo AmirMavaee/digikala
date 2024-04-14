@@ -68,7 +68,6 @@ showSearchbar();
 function showSearchbar(){
   document.body.classList.remove("bg-dark-50");
   document.body.classList.remove("bg-dark-50-mobile");
-  selectBoxMobile.classList.add("d-none");
   if(this.screen.width <= 1023){
     showSearchBarMobile()
   }else{
