@@ -117,7 +117,7 @@ a{
     z-index: 20;
     padding: 10px;
     transform: translateY(100%);
-    transition:  .2s linear;
+    transition:  .15s linear;
 }
 
 .header-menu .search-responsive-container .search-input-responsive-container.show{
