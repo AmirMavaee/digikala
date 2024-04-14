@@ -119,7 +119,7 @@ function showSearchBarMobile(){
     setTimeout(() => {
       document.body.classList.add("bg-dark-50-mobile");
       selectBoxMobile.classList.add("show");
-    }, 10);
+    }, 100);
   })
   selectBoxMobileClose.addEventListener("click" , function(){
     selectBoxMobile.classList.remove("show");
