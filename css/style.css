@@ -298,8 +298,15 @@ a{
     border-radius: 10px;
     bottom: 9px; 
     z-index: 10; 
+    opacity: 0;
+    visibility: hidden;
     transition: .2s linear;
     pointer-events: none;
+}
+.header .menu .border-bottom-menu-item.show{
+    opacity: 1;
+    visibility: visible;
+    transition: .2s linear;
 }
 
 .header .menu .location {
