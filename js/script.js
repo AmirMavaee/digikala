@@ -8,8 +8,8 @@ function swiperSpaceBetween() {
       freeMode: true,
       freeModeSticky: true,
       navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
+        nextEl: ".swiper-button-next-header-stories",
+        prevEl: ".swiper-button-prev-header-stories",
       },
     });
   } else {
@@ -19,8 +19,8 @@ function swiperSpaceBetween() {
       freeMode: true,
       freeModeSticky: true,
       navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
+        nextEl: ".swiper-button-next-header-stories",
+        prevEl: ".swiper-button-prev-header-stories",
       },
     });
   }
@@ -29,8 +29,8 @@ function swiperSpaceBetween() {
 const headerSlidShow = new Swiper(".header-slideShow", {
   loop: true,
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+    nextEl: ".swiper-button-next-slideShow",
+    prevEl: ".swiper-button-prev-slideShow",
   },
   pagination: {
     el: ".swiper-pagination",
@@ -45,8 +45,8 @@ const mostSearchSwiper = new Swiper(".most-search-swiper", {
   slidesPerView: "auto",
   spaceBetween: 8,
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+    nextEl: ".swiper-button-next-most-search",
+    prevEl: ".swiper-button-prev-most-search",
   },
 });
 
@@ -158,7 +158,7 @@ function showSearchBarMobile() {
 
 // add style when hover on navbar
 const navbar = document.querySelector(".header .menu .menu-item");
-const navbarItem = document.querySelectorAll(".header .menu .menu-item li");
+const navbarItem = document.querySelectorAll(".header .menu .menu-item > li");
 const navbarItemBorder = document.querySelector(
   ".header .menu .border-bottom-menu-item"
 );
@@ -181,4 +181,59 @@ navbarItem.forEach(function (item) {
       navbarItemBorder.classList.remove("show");
     }, 200);
   });
+});
+
+// kala grouping
+const kalaNameItem = document.querySelectorAll(".header .menu .kala-name li");
+const kalaNameItemImg = document.querySelectorAll(
+  ".header .menu .kala-name img"
+);
+const svg = document.querySelectorAll(".kala-icon");
+
+kalaNameItem[0].classList.add("bg-white");
+kalaNameItem[0].classList.add("text-danger");
+svg[0].style.color = "red";
+
+kalaNameItem.forEach(function (item, index) {
+  item.addEventListener("mouseenter", function () {
+    if (
+      kalaNameItem[0].classList.contains("bg-white") &&
+      kalaNameItem[0].classList.contains("text-danger")
+    ) {
+      kalaNameItem[0].classList.remove("bg-white");
+      kalaNameItem[0].classList.remove("text-danger");
+      svg[0].style.color = "#3f4064";
+    }
+    item.classList.add("bg-white");
+    item.classList.add("text-danger");
+    svg[index].style.color = "red";
+  });
+  item.addEventListener("mouseleave", function () {
+    item.classList.remove("bg-white");
+    item.classList.remove("text-danger");
+    svg[index].style.color = "#3f4064";
+  });
+});
+
+const kalaDec = document.querySelector(".header .menu .kala-dec");
+kalaDec.addEventListener("mouseenter", function () {
+  kalaNameItem[0].classList.add("bg-white");
+  kalaNameItem[0].classList.add("text-danger");
+  svg[0].style.color = "red";
+});
+
+// show kala grouping
+const kalaItem = document.querySelector(
+  ".header .menu .menu-item li:first-child"
+);
+const kalaGrouping = document.querySelector(".header .menu .kala-grouping");
+kalaItem.addEventListener("mouseenter", function () {
+  kalaGrouping.classList.remove("d-none");
+  kalaGrouping.classList.add("d-flex");
+  document.body.classList.add("bg-dark-50-kala-grouping");
+});
+kalaItem.addEventListener("mouseleave", function () {
+  kalaGrouping.classList.add("d-none");
+  kalaGrouping.classList.remove("d-flex");
+  document.body.classList.remove("bg-dark-50-kala-grouping");
 });

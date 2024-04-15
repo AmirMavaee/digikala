@@ -182,14 +182,14 @@
                     </a>
                   </div>
                 </div>
-                <div class="swiper-button-next">
+                <div class="swiper-button-next swiper-button-next-most-search">
                   <img
                     src="./assets/leftArrow.svg"
                     alt="left Arrow"
                     class="bg-white rounded-circle"
                   />
                 </div>
-                <div class="swiper-button-prev">
+                <div class="swiper-button-prev swiper-button-prev-most-search">
                   <img
                     src="./assets/rightArrow.svg"
                     alt="Right Arrow"
@@ -216,9 +216,600 @@
           <div class="menu-container flex-grow-1">
             <ul class="menu-item d-flex m-0 p-0">
               <li class="ps-0">
-                <a href="#" class="text-dark">
+                <a href="#" class="text-dark position-relative">
                   <img src="./assets/menu.svg" alt="menu" />
                   دسته‌بندی کالاها
+                  <div class="kala-grouping d-none flex-row-reverse  position-absolute bg-white" style="width: 1150px;">
+                    <div class="kala-name overflow-y-scroll h-100">
+                        <ul class="p-0 " style="width: 195px;">
+                            <li class="d-flex align-items-center justify-content-end">
+                                موبایل
+                                <iconify-icon class="kala-icon pe-2" icon="nimbus:mobile" width="18" height="18"  style="color: #3f4064"></iconify-icon>
+                            </li>
+                            <li class="d-flex align-items-center justify-content-end">
+                                کالای دیجیتال
+                                <iconify-icon class="kala-icon pe-2" icon="majesticons:laptop-line" width="18" height="18"  style="color: #3f4064"></iconify-icon>
+                            </li>
+                            <li class="d-flex align-items-center justify-content-end">
+                                خانه و آشپزخانه
+                                <iconify-icon class="kala-icon pe-2" icon="solar:sofa-3-linear" width="18" height="18"  style="color: #3f4064"></iconify-icon>
+                            </li>
+                            <li class="d-flex align-items-center justify-content-end">
+                                لوازم خانگی برقی
+                                <iconify-icon class="kala-icon pe-2" icon="icon-park-outline:electric-drill" width="18" height="18"  style="color: #3f4064"></iconify-icon>
+                            </li>
+                            <li class="d-flex align-items-center justify-content-end">
+                                مد و پوشاک
+                                <iconify-icon class="kala-icon pe-2" icon="iconoir:shirt" width="18" height="18"  style="color: #3f4064"></iconify-icon>
+                            </li>
+                            <li class="d-flex align-items-center justify-content-end">
+                                ساعت، طلا و جواهرات
+                                <iconify-icon class="kala-icon pe-2" icon="game-icons:necklace-display" width="18" height="18"  style="color: #3f4064"></iconify-icon>
+                            </li>
+                            <li class="d-flex align-items-center justify-content-end">
+                                زیبایی و سلامت
+                                <iconify-icon class="kala-icon pe-2" icon="ri:heart-2-line" width="18" height="18"  style="color: #3f4064"></iconify-icon>
+                            </li>
+                            <li class="d-flex align-items-center justify-content-end">
+                                کارت هدیه
+                                <iconify-icon class="kala-icon pe-2" icon="fluent:gift-card-16-filled" width="18" height="18"  style="color: #3f4064"></iconify-icon>
+                            </li>
+                            <li class="d-flex align-items-center justify-content-end">
+                                کالاهای سوپرمارکتی
+                                <iconify-icon class="kala-icon pe-2" icon="fontisto:shopping-basket" width="18" height="18"  style="color: #3f4064"></iconify-icon>
+                            </li>
+                            <li class="d-flex align-items-center justify-content-end">
+                                کتاب، لوازم تحریر و هنر
+                                <iconify-icon class="kala-icon pe-2" icon="mdi:pencil" width="18" height="18"  style="color: #3f4064"></iconify-icon>
+                            </li>
+                            <li class="d-flex align-items-center justify-content-end">
+                                اسباب بازی، کودک و نوزاد
+                                <iconify-icon class="kala-icon pe-2" icon="lucide:baby" width="18" height="18"  style="color: #3f4064"></iconify-icon>
+                            </li>
+                            <li class="d-flex align-items-center justify-content-end">
+                                ابزار آلات و تجهیزات
+                                <iconify-icon class="kala-icon pe-2" icon="mdi:wrench" width="18" height="18"  style="color: #3f4064"></iconify-icon>
+                            </li>
+                            <li class="d-flex align-items-center justify-content-end">
+                                خودرو و موتورسیکلت
+                                <iconify-icon class="kala-icon pe-2" icon="bx:car" width="18" height="18"  style="color: #3f4064"></iconify-icon>
+                            </li>
+                            <li class="d-flex align-items-center justify-content-end">
+                                ورزش و سفر
+                                <iconify-icon class="kala-icon pe-2" icon="mingcute:passport-line" width="18" height="18"  style="color: #3f4064"></iconify-icon>
+                            </li>
+                            <li class="d-flex align-items-center justify-content-end">
+                                محصولات بومی و محلی
+                                <iconify-icon class="kala-icon pe-2" icon="material-symbols:local-library-outline" width="18" height="18"  style="color: #3f4064"></iconify-icon>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="kala-dec p-3 w-100 overflow-hidden overflow-y-scroll ">
+                        <span class="d-flex justify-content-end align-items-center mb-4 mt-3">
+                            <iconify-icon class="ms-2" icon="mingcute:left-line" width="12.5" height="12.5"  style="color: #008ebd"></iconify-icon>
+                            همه محصولات موبایل 
+                        </span>
+                        <div class="row" dir="rtl">
+                            <div class="col-3">
+                                <ul class="p-0">
+                                    <li class="kala-header pb-3 position-relative ps-3">
+                                        <a href="#">
+                                            برندهای مختلف گوشی موبایل
+                                            <iconify-icon class="ms-1 left-arrow-kala-header" icon="mingcute:left-line" width="12.5" height="12.5"  style="color: #000"></iconify-icon>
+                                        </a>
+                                    </li>
+                                    <li class="kala-text">
+                                        <a href="#">
+                                            گوشی آیفون
+                                        </a>
+                                    </li>
+                                    <li class="kala-text">
+                                        <a href="#">
+                                            گوشی سامسونگ
+                                        </a>
+                                    </li>
+                                    <li class="kala-text">
+                                        <a href="#">
+                                            گوشی شیائومی
+                                        </a>
+                                    </li>
+                                    <li class="kala-text">
+                                        <a href="#">
+                                            گوشی ریلمی
+                                        </a>
+                                    </li>
+                                    <li class="kala-text">
+                                        <a href="#">
+                                            گوشی آنر
+                                        </a>
+                                    </li>
+                                    <li class="kala-text">
+                                        <a href="#">
+                                            گوشی ناتینگ فون
+                                        </a>
+                                    </li>
+                                    <li class="kala-text">
+                                        <a href="#">
+                                            گوشی جی پلاس
+                                        </a>
+                                    </li>
+                                    <li class="kala-text">
+                                        <a href="#">
+                                            گوشی هواوی
+                                        </a>
+                                    </li>
+                                    <li class="kala-text">
+                                        <a href="#">
+                                            گوشی جی ال ایکس
+                                        </a>
+                                    </li>
+                                    <li class="kala-text">
+                                        <a href="#">
+                                            گوشی‌های جنرال لوکس
+                                        </a>
+                                    </li>
+                                    <li class="kala-text">
+                                        <a href="#">
+                                            گوشی داریا
+                                        </a>
+                                    </li>
+                                    <li class="kala-text">
+                                        <a href="#">
+                                            گوشی گوگل
+                                        </a>
+                                    </li>
+                                    <li class="kala-text">
+                                        <a href="#">
+                                            گوشی اوپو
+                                        </a>
+                                    </li>
+                                    <li class="kala-text">
+                                        <a href="#">
+                                            گوشی ارد
+                                        </a>
+                                    </li>
+                                    <li class="kala-text">
+                                        <a href="#">
+                                            گوشی وان پلاس
+                                        </a>
+                                    </li>
+                                    <li class="kala-text">
+                                        <a href="#">
+                                            گوشی موبایل رنسو
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-3">
+                                <ul class="p-0">
+                                    <li class="kala-header pb-3 position-relative ps-3">
+                                        <a href="#">
+                                            گوشی براساس قیمت
+                                            <iconify-icon class="ms-1 left-arrow-kala-header" icon="mingcute:left-line" width="12.5" height="12.5"  style="color: #000"></iconify-icon>
+                                        </a>
+                                    </li>
+                                    <li class="kala-text">
+                                        <a href="#">
+                                            گوشی موبایل ارزان
+                                        </a>
+                                    </li>
+                                    <li class="kala-text">
+                                        <a href="#">
+                                            گوشی موبایل قسطی
+                                        </a>
+                                    </li>
+                                    <li class="kala-text">
+                                        <a href="#">
+                                            گوشی تا 2 میلیون تومان
+                                        </a>
+                                    </li>
+                                    <li class="kala-text">
+                                        <a href="#">
+                                            گوشی تا 5 میلیون تومان
+                                        </a>
+                                    </li>
+                                    <li class="kala-text">
+                                        <a href="#">
+                                            گوشی تا 7 میلیون تومان
+                                        </a>
+                                    </li>
+                                    <li class="kala-text">
+                                        <a href="#">
+                                            گوشی تا 15 میلیون تومان
+                                        </a>
+                                    </li>
+                                    <li class="kala-text">
+                                        <a href="#">
+                                            گوشی بالای 15 میلیون تومان
+                                        </a>
+                                    </li>
+                                    <li class="kala-header pb-3 position-relative ps-3">
+                                        <a href="#">
+                                            گوشی براساس عملکرد
+                                            <iconify-icon class="ms-1 left-arrow-kala-header" icon="mingcute:left-line" width="12.5" height="12.5"  style="color: #000"></iconify-icon>
+                                        </a>
+                                    </li>
+                                    <li class="kala-text">
+                                        <a href="#">
+                                            گوشی گیمینگ
+                                        </a>
+                                    </li>
+                                    <li class="kala-text">
+                                        <a href="#">
+                                            گوشی 5G
+                                        </a>
+                                    </li>
+                                    <li class="kala-text">
+                                        <a href="#">
+                                            گوشی دکمه‌ای
+                                        </a>
+                                    </li>
+                                    <li class="kala-text">
+                                        <a href="#">
+                                            گوشی ضد آب
+                                        </a>
+                                    </li>
+                                    <li class="kala-text">
+                                        <a href="#">
+                                            گوشی مناسب عکاسی
+                                        </a>
+                                    </li>
+                                    <li class="kala-text">
+                                        <a href="#">
+                                            گوشی میان رده
+                                        </a>
+                                    </li>
+                                    <li class="kala-text">
+                                        <a href="#">
+                                            گوشی اقتصادی
+                                        </a>
+                                    </li>
+                                    <li class="kala-text">
+                                        <a href="#">
+                                            گوشی دانش آموزی
+                                        </a>
+                                    </li>
+                                    <li class="kala-text">
+                                        <a href="#">
+                                            گوشی پرچمدار
+                                        </a>
+                                    </li>
+                                    <li class="kala-text">
+                                        <a href="#">
+                                            دو سیمکارت
+                                        </a>
+                                    </li>
+                                    <li class="kala-header pb-3 position-relative ps-3">
+                                        <a href="#">
+                                            گوشی براساس حافظه داخلی
+                                            <iconify-icon class="ms-1 left-arrow-kala-header" icon="mingcute:left-line" width="12.5" height="12.5"  style="color: #000"></iconify-icon>
+                                        </a>
+                                    </li>
+                                    <li class="kala-text">
+                                        <a href="#">
+                                            گوشی تا 16 گیگابایت
+                                        </a>
+                                    </li>
+                                    <li class="kala-text">
+                                        <a href="#">
+                                            گوشی تا 32 گیگابایت
+                                        </a>
+                                    </li>
+                                    <li class="kala-text">
+                                        <a href="#">
+                                            گوشی تا 64 گیگابایت
+                                        </a>
+                                    </li>
+                                    <li class="kala-text">
+                                        <a href="#">
+                                            گوشی تا 128 گیگابایت
+                                        </a>
+                                    </li>
+                                    <li class="kala-text">
+                                        <a href="#">
+                                            گوشی تا 256 گیگابایت
+                                        </a>
+                                    </li>
+                                    <li class="kala-text">
+                                        <a href="#">
+                                            گوشی تا 1 ترابایت
+                                        </a>
+                                    </li>
+                                    <li class="kala-header pb-3 position-relative ps-3">
+                                        <a href="#">
+                                            رزولوشن عکس
+                                            <iconify-icon class="ms-1 left-arrow-kala-header" icon="mingcute:left-line" width="12.5" height="12.5"  style="color: #000"></iconify-icon>
+                                        </a>
+                                    </li>
+                                    <li class="kala-text">
+                                        <a href="#">
+                                            گوشی تا 13 مگاپیکسل
+                                        </a>
+                                    </li>
+                                    <li class="kala-text">
+                                        <a href="#">
+                                            گوشی تا 16 مگاپیکسل
+                                        </a>
+                                    </li>
+                                    <li class="kala-text">
+                                        <a href="#">
+                                            گوشی تا 48 مگاپیکسل
+                                        </a>
+                                    </li>
+                                    <li class="kala-text">
+                                        <a href="#">
+                                            گوشی تا 64 مگاپیکسل
+                                        </a>
+                                    </li>
+                                    <li class="kala-text">
+                                        <a href="#">
+                                            گوشی تا 108 مگاپیکسل
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-3">
+                                <ul class="p-0">
+                                    <li class="kala-header pb-3 position-relative ps-3">
+                                        <a href="#">
+                                            لوازم جانبی موبایل
+                                            <iconify-icon class="ms-1 left-arrow-kala-header" icon="mingcute:left-line" width="12.5" height="12.5"  style="color: #000"></iconify-icon>
+                                        </a>
+                                    </li>
+                                    <li class="kala-text">
+                                        <a href="#">
+                                            شارژر گوشی
+                                        </a>
+                                    </li>
+                                    <li class="kala-text">
+                                        <a href="#">
+                                            قاب و کاور گوشی
+                                        </a>
+                                    </li>
+                                    <li class="kala-text">
+                                        <a href="#">
+                                            گلس گوشی
+                                        </a>
+                                    </li>
+                                    <li class="kala-text">
+                                        <a href="#">
+                                            هولدر گوشی موبایل
+                                        </a>
+                                    </li>
+                                    <li class="kala-text">
+                                        <a href="#">
+                                            کابل شارژ و مبدل
+                                        </a>
+                                    </li>
+                                    <li class="kala-text">
+                                        <a href="#">
+                                            پاوربانک (شارژر همراه)
+                                        </a>
+                                    </li>
+                                    <li class="kala-header pb-3 position-relative ps-3">
+                                        <a href="#">
+                                            تبلت
+                                            <iconify-icon class="ms-1 left-arrow-kala-header" icon="mingcute:left-line" width="12.5" height="12.5"  style="color: #000"></iconify-icon>
+                                        </a>
+                                    </li>
+                                    <li class="kala-text">
+                                        <a href="#">
+                                            تبلت سامسونگ
+                                        </a>
+                                    </li>
+                                    <li class="kala-text">
+                                        <a href="#">
+                                            تبلت اپل(آی پد)
+                                        </a>
+                                    </li>
+                                    <li class="kala-text">
+                                        <a href="#">
+                                            تبلت شیائومی
+                                        </a>
+                                    </li>
+                                    <li class="kala-text">
+                                        <a href="#">
+                                            تبلت لنوو
+                                        </a>
+                                    </li>
+                                    <li class="kala-text">
+                                        <a href="#">
+                                            تبلت مایکروسافت
+                                        </a>
+                                    </li>
+                                    <li class="kala-text">
+                                        <a href="#">
+                                            تبلت دانش آموزی
+                                        </a>
+                                    </li>
+                                    <li class="kala-header pb-3 position-relative ps-3">
+                                        <a href="#">
+                                            هدفون
+                                            <iconify-icon class="ms-1 left-arrow-kala-header" icon="mingcute:left-line" width="12.5" height="12.5"  style="color: #000"></iconify-icon>
+                                        </a>
+                                    </li>
+                                    <li class="kala-text">
+                                        <a href="#">
+                                            هدفون بی سیم
+                                        </a>
+                                    </li>
+                                    <li class="kala-text">
+                                        <a href="#">
+                                            هدفون اپل(ایر پاد)
+                                        </a>
+                                    </li>
+                                    <li class="kala-text">
+                                        <a href="#">
+                                            هدفون بیتس
+                                        </a>
+                                    </li>
+                                    <li class="kala-text">
+                                        <a href="#">
+                                            هدفون سونی
+                                        </a>
+                                    </li>
+                                    <li class="kala-text">
+                                        <a href="#">
+                                            هدفون سامسونگ(ایربادز)
+                                        </a>
+                                    </li>
+                                    <li class="kala-text">
+                                        <a href="#">
+                                            هدفون شیائومی
+                                        </a>
+                                    </li>
+                                    <li class="kala-text">
+                                        <a href="#">
+                                            هدفون جی بی ال
+                                        </a>
+                                    </li>
+                                    <li class="kala-header pb-3 position-relative ps-3">
+                                        <a href="#">
+                                            ساعت و مچ بند هوشمند
+                                            <iconify-icon class="ms-1 left-arrow-kala-header" icon="mingcute:left-line" width="12.5" height="12.5"  style="color: #000"></iconify-icon>
+                                        </a>
+                                    </li>
+                                    <li class="kala-text">
+                                        <a href="#">
+                                            ساعت هوشمند سامسونگ
+                                        </a>
+                                    </li>
+                                    <li class="kala-text">
+                                        <a href="#">
+                                            ساعت هوشمند شیائومی
+                                        </a>
+                                    </li>
+                                    <li class="kala-text">
+                                        <a href="#">
+                                            اپل واچ
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-3">
+                                <ul class="p-0">
+                                    <li class="kala-header pb-3 position-relative ps-3">
+                                        <a href="#">
+                                            داغ ترین ها
+                                            <iconify-icon class="ms-1 left-arrow-kala-header" icon="mingcute:left-line" width="12.5" height="12.5"  style="color: #000"></iconify-icon>
+                                        </a>
+                                    </li>
+                                    <li class="kala-text">
+                                        <a href="#">
+                                            گلکسی S23 Ultra
+                                        </a>
+                                    </li>
+                                    <li class="kala-text">
+                                        <a href="#">
+                                            گلکسی A54
+                                        </a>
+                                    </li>
+                                    <li class="kala-text">
+                                        <a href="#">
+                                            گلکسی A34
+                                        </a>
+                                    </li>
+                                    <li class="kala-text">
+                                        <a href="#">
+                                            گلکسی A24
+                                        </a>
+                                    </li>
+                                    <li class="kala-text">
+                                        <a href="#">
+                                            گلکسی A14
+                                        </a>
+                                    </li>
+                                    <li class="kala-text">
+                                        <a href="#">
+                                            گلکسی S23 FE
+                                        </a>
+                                    </li>
+                                    <li class="kala-text">
+                                        <a href="#">
+                                            ردمی نوت 12
+                                        </a>
+                                    </li>
+                                    <li class="kala-text">
+                                        <a href="#">
+                                            پوکو C40
+                                        </a>
+                                    </li>
+                                    <li class="kala-text">
+                                        <a href="#">
+                                            پوکو X5 Pro 5G
+                                        </a>
+                                    </li>
+                                    <li class="kala-text">
+                                        <a href="#">
+                                            ردمی A2 Plus
+                                        </a>
+                                    </li>
+                                    <li class="kala-text">
+                                        <a href="#">
+                                            پوکو M5s
+                                        </a>
+                                    </li>
+                                    <li class="kala-text">
+                                        <a href="#">
+                                            آنر X9a
+                                        </a>
+                                    </li>
+                                    <li class="kala-text">
+                                        <a href="#">
+                                            موتورولا moto E13
+                                        </a>
+                                    </li>
+                                    <li class="kala-text">
+                                        <a href="#">
+                                            جی پلاس Q20s
+                                        </a>
+                                    </li>
+                                    <li class="kala-text">
+                                        <a href="#">
+                                            داریا باند 5G
+                                        </a>
+                                    </li>
+                                    <li class="kala-text">
+                                        <a href="#">
+                                            جدیدترین محصولات اپل
+                                        </a>
+                                    </li>
+                                    <li class="kala-header pb-3 position-relative ps-3">
+                                        <a href="#">
+                                            برندهای برتر
+                                            <iconify-icon class="ms-1 left-arrow-kala-header" icon="mingcute:left-line" width="12.5" height="12.5"  style="color: #000"></iconify-icon>
+                                        </a>
+                                    </li>
+                                    <li class="kala-text">
+                                        <a href="#">
+                                            اپل
+                                        </a>
+                                    </li>
+                                    <li class="kala-text">
+                                        <a href="#">
+                                            سامسونگ
+                                        </a>
+                                    </li>
+                                    <li class="kala-text">
+                                        <a href="#">
+                                            هوآوی
+                                        </a>
+                                    </li>
+                                    <li class="kala-text">
+                                        <a href="#">
+                                            آنر
+                                        </a>
+                                    </li>
+                                    <li class="kala-text">
+                                        <a href="#">
+                                            ریلمی
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
                 </a>
               </li>
               <li>
@@ -561,14 +1152,14 @@
                 </div>
               </div>
             </div>
-            <div class="swiper-button-next">
+            <div class="swiper-button-next swiper-button-next-header-stories">
               <img
                 src="./assets/leftArrow.svg"
                 alt="left Arrow"
                 class="bg-white rounded-circle"
               />
             </div>
-            <div class="swiper-button-prev">
+            <div class="swiper-button-prev swiper-button-prev-header-stories">
               <img
                 src="./assets/rightArrow.svg"
                 alt="Right Arrow"
@@ -676,14 +1267,14 @@
             </div>
           </div>
           <div class="header-slideShow-navigation">
-            <div class="swiper-button-next">
+            <div class="swiper-button-next swiper-button-next-slideShow">
               <img
                 src="./assets/leftArrow.svg"
                 alt="left Arrow"
                 class="bg-white rounded-circle"
               />
             </div>
-            <div class="swiper-button-prev">
+            <div class="swiper-button-prev swiper-button-prev-slideShow">
               <img
                 src="./assets/rightArrow.svg"
                 alt="Right Arrow"
@@ -698,6 +1289,8 @@
 
     <script src="./js/jquery-3.7.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@2.1.0/dist/iconify-icon.min.js"></script>
     <script src="./js/script.js"></script>
   </body>
 </html>

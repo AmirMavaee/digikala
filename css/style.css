@@ -16,17 +16,19 @@
 }
 
 body {
-    /* height: 1000px; */
+    height: 1000px;
     font-family: "iranyekan";
     box-sizing: border-box;
 }
 body.bg-dark-50 , 
-body.bg-dark-50-mobile{
+body.bg-dark-50-mobile , 
+body.bg-dark-50-kala-grouping{
     overflow: hidden;
     position: relative;
 }
 
-body.bg-dark-50::after{
+body.bg-dark-50::after , 
+body.bg-dark-50-kala-grouping::after{
     position: absolute;
     content: "";
     width: 100%;
@@ -260,8 +262,9 @@ a{
     padding-left: 19px;
 }
 
-.header .menu .menu-item li {
-    padding: 18px 12px;
+.header .menu .menu-item > li {
+    padding: 18px 12px 18px 0;
+    margin-left: 12px;
 }
 
 .header .menu .menu-item a{
@@ -297,7 +300,7 @@ a{
     background-color: red; 
     border-radius: 10px;
     bottom: 9px; 
-    z-index: 10; 
+    z-index: 30; 
     opacity: 0;
     visibility: hidden;
     transition: .2s linear;
@@ -307,6 +310,54 @@ a{
     opacity: 1;
     visibility: visible;
     transition: .2s linear;
+}
+
+.header .menu .kala-grouping{
+    max-height: 69vh; 
+    top: 51px;
+    z-index: 20; 
+    direction: ltr; 
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .14), 0 4px 8px rgba(0, 0, 0, .3);
+}
+
+.header .menu .kala-name li{
+    font-size: 12px;
+    color: #3f4064;
+    padding: 1.04rem 5px;
+    background-color: #f5f5f5;
+}
+
+.header .menu .kala-grouping .kala-dec span {
+    color: #008ebd;
+    font-size: 12.5px;
+}
+
+.header .menu .kala-grouping .kala-dec ul li.kala-header a{
+    font-size: 13.5px;
+    color: #000;
+    display: flex;
+    align-items: center;
+}
+.header .menu .kala-grouping .kala-dec ul li.kala-header a:hover , 
+.header .menu .kala-grouping .kala-dec ul li.kala-header a:hover .left-arrow-kala-header , 
+.header .menu .kala-grouping .kala-dec ul li.kala-text a:hover{
+    color: red !important;
+}
+
+.header .menu .kala-grouping .kala-dec ul li.kala-header::before{
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 15px;
+    top: 4px;
+    right: 0;
+    background-color: red;
+}
+.header .menu .kala-grouping .kala-dec ul li.kala-text{
+    margin-bottom: .75rem;
+}
+.header .menu .kala-grouping .kala-dec ul li.kala-text a{
+    font-size: 12.5px;
 }
 
 .header .menu .location {
@@ -360,7 +411,7 @@ a{
 }
 
 .swiper-button-next.swiper-button-disabled, .swiper-button-prev.swiper-button-disabled{
-    display: none;
+    display: none !important;
 }
 
 .header-stories-swiper .swiper-slide{
