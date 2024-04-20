@@ -559,7 +559,7 @@ a{
 /* category page mobile */
 
 .categoryPage-mobile{
-    height: calc(100vh - 61px); 
+    height: 50vh; 
     background-color: red;
     z-index: 20;
 }
