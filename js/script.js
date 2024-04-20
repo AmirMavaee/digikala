@@ -124,7 +124,6 @@ function showSearchBarMobile() {
   const selectBoxMobileClear = document.querySelector(
     ".header-menu .search-responsive-container .search-input-responsive-container .search-close-icon"
   );
-  console.log(selectBoxMobileInput);
 
   selectInputMobile.addEventListener("click", function () {
     selectBoxMobile.classList.remove("d-none");
@@ -236,4 +235,45 @@ kalaItem.addEventListener("mouseleave", function () {
   kalaGrouping.classList.add("d-none");
   kalaGrouping.classList.remove("d-flex");
   document.body.classList.remove("bg-dark-50-kala-grouping");
+});
+
+// navbar bottom
+const divContainer = document.querySelectorAll(".bottom-navbar > div > div");
+const navbarBottomIcon = document.querySelectorAll(
+  ".bottom-navbar > div > div .navbar-bottom-icon"
+);
+const navbarBottomText = document.querySelectorAll(
+  ".bottom-navbar > div > div .bottom-navbar-text"
+);
+divContainer.forEach(function (item, index) {
+  item.addEventListener("click", function () {
+    navbarBottomIcon.forEach(function (element, iconIndex) {
+      if (
+        element.classList.contains("text-dark-bottom-navbar") &&
+        navbarBottomText[iconIndex].classList.contains(
+          "text-dark-bottom-navbar"
+        )
+      ) {
+        element.classList.remove("text-dark-bottom-navbar");
+        element.classList.add("stroke-bottom-navbar");
+
+        navbarBottomText[iconIndex].classList.add("stroke-bottom-navbar-color");
+        navbarBottomText[iconIndex].classList.remove("text-dark-bottom-navbar");
+      }
+    });
+
+    navbarBottomIcon[index].classList.remove("stroke-bottom-navbar");
+    navbarBottomIcon[index].classList.add("text-dark-bottom-navbar");
+    navbarBottomText[index].classList.remove("stroke-bottom-navbar-color");
+    navbarBottomText[index].classList.add("text-dark-bottom-navbar");
+
+    if(item.innerText === "دسته‌بندی"){
+      document.querySelector(".header-gif").classList.add("d-none");
+      document.querySelector(".categoryPage-mobile").classList.remove("d-none")
+    }
+    else{
+      document.querySelector(".header-gif").classList.remove("d-none")
+      document.querySelector(".categoryPage-mobile").classList.add("d-none")
+    }
+  });
 });

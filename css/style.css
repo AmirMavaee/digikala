@@ -16,7 +16,7 @@
 }
 
 body {
-    height: 1000px;
+    /* height: 1000px; */
     font-family: "iranyekan";
     box-sizing: border-box;
 }
@@ -65,10 +65,8 @@ a{
     margin: 0 auto;
 }
 
-.header picture img {
+.header-gif img{
     height: 60px;
-    object-fit: cover;
-    display: inline-block;
 }
 
 .header-menu{
@@ -475,4 +473,92 @@ a{
     opacity: 1;
     visibility: visible;
     transition: .15s linear;
+}
+
+
+
+/* bottom navbar */
+.bottom-navbar{
+    display: none;
+    z-index: 30;
+}
+
+.bottom-navbar{
+    border-top: .5px solid #edeff3;
+    box-shadow: 0 -1px 1px rgba(0, 0, 0, .14),
+     0 -2px 2px rgba(0, 0, 0, .05);;
+}
+
+.bottom-navbar > div > div {
+    position: relative;
+}
+
+.bottom-navbar > div > div::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 100%;
+    top: 0;
+    left: 50%;
+    background-color: #f1f1f1;
+    z-index: -1;
+}
+
+.bottom-navbar > div > div:hover::after,
+.bottom-navbar > div > div:hover::before{
+    animation: hover-bg .3s ease-in-out;
+}
+
+
+.bottom-navbar > div > div::before{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 100%;
+    right: 50%;
+    top: 0;
+    background-color: #f1f1f1;
+    z-index: -1;
+
+}
+
+@keyframes hover-bg {
+    0%{
+        width: 0;
+        opacity: 1;
+    }
+    99%{
+        width: 50%;
+    }
+    100%{
+        width: 0;
+        opacity: .6;
+    }
+}
+
+.bottom-navbar .bottom-navbar-text{
+    font-size: 11px;
+    transform: translateY(-4px);
+}
+ 
+.text-dark-bottom-navbar{
+    color: #424750 !important;
+}
+
+.stroke-bottom-navbar{
+    stroke: #a1a3a8;
+    color: transparent;
+    stroke-width: 1.5px
+}
+
+.stroke-bottom-navbar-color{
+    color: #a1a3a8;
+}
+
+
+/* category page mobile */
+
+.categoryPage-mobile{
+    height: calc(100vh - 61px); 
+    z-index: 20;
 }

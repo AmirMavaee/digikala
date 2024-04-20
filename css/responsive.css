@@ -8,10 +8,13 @@
     .header .menu .menu-item li:nth-child(6){
         display: none;
     } 
+    .main .header-slideShow-container .header-slideShow{
+        height: 303px;
+    }
 }
 
 @media (max-width : 1023px) {
-    .header picture img {
+    .header-gif img{
         height: 35px;
     }
     .header-menu .search-container , .header-menu .menu {
@@ -44,5 +47,11 @@
     }
     .header-stories-swiper .swiper-slide .story-text{
         font-size: 10px;
+    }
+    .main .header-slideShow-container .header-slideShow{
+        height: 268px;
+    }
+    .bottom-navbar{
+        display: block;
     }
 }
