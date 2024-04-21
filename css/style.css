@@ -581,11 +581,34 @@ a{
     margin-bottom: 1rem;
 }
 
+.categoryPage-mobile .kala-grouping .kala-dec .kala-submenu{
+    border-bottom: 1px solid #f0f0f1;
+}
+
 .categoryPage-mobile .kala-grouping .kala-dec .kala-submenu p{
     font-size: 12px;
-    border-bottom: 1px solid #f0f0f1;
 }
 
 .categoryPage-mobile .kala-grouping .kala-dec .kala-submenu p .submenu-icon{
     transform: rotateX(180deg);
+}
+
+.categoryPage-mobile .kala-grouping .kala-dec .kala-submenu .brand-container .brand span{
+    background-color: #f0f0f1;
+    display: inline-block;
+    margin: 0;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.categoryPage-mobile .kala-grouping .kala-dec .kala-submenu .brand-container .brand img{
+    width: 45px;
+    height: 45px;
+    mix-blend-mode: darken;
+}
+
+.categoryPage-mobile .kala-grouping .kala-dec .kala-submenu .brand-container .brand div{
+    font-size: 10px;
+    margin-top: 7px;
+    margin-bottom: 3px;
 }
