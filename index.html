@@ -17,22 +17,20 @@
     <title></title>
   </head>
   <body>
-
-    <div class="header-gif d-none">
-      <picture>
-        <source media="(max-width: 1023px)" srcset="./assets/mobileimage.jpg" />
-        <source
-          media="(min-width: 1024px)"
-          srcset="./assets/desktopimage.gif"
-        />
-        <img
-          class="w-100 inline-block object-fit-cover"
-          src="./assets/desktopimage.gif"
-        />
-      </picture>
-    </div>
-
     <header class="header">
+      <div class="header-gif d-none">
+        <picture>
+          <source media="(max-width: 1023px)" srcset="./assets/mobileimage.jpg" />
+          <source
+            media="(min-width: 1024px)"
+            srcset="./assets/desktopimage.gif"
+          />
+          <img
+            class="w-100 inline-block object-fit-cover"
+            src="./assets/desktopimage.gif"
+          />
+        </picture>
+      </div>
       <div class="header-menu">
         <section class="search-responsive-container position-relative">
           <section>
@@ -54,7 +52,7 @@
             />
           </section>
           <div
-            class="search-input-responsive-container position-absolute top-0 start-0 bg-white d-none"
+            class="search-input-responsive-container position-fixed top-0 start-0 bg-white d-none"
           >
             <img
               src="./assets/rightArrowResponsive.svg"
@@ -1331,15 +1329,15 @@
       <div class="kala-grouping" style="height: calc(100% - 52px);">
         <div class="kal-name h-100">
           <ul class="p-0 m-0 h-100 overflow-y-scroll" dir="ltr" style="width: 90px; background: #f0f0f1">
-            <li class="d-flex py-3 px-2 flex-column align-items-center justify-content-center">
+            <li class="d-flex py-3 px-2 flex-column border-0 border-top-0 bg-white align-items-center justify-content-center">
               <iconify-icon
               class="kala-icon"
               icon="nimbus:mobile"
               width="15"
               height="15"
-              style="color: #3f4064"
+              style="color: #ff0000"
             ></iconify-icon>
-            <span class="d-block mt-1 text-center">موبایل</span>
+            <span class="d-block mt-1 text-center text-danger">موبایل</span>
             </li>
             <li class="d-flex py-3 px-2 flex-column align-items-center justify-content-center">
               <iconify-icon
@@ -1486,7 +1484,7 @@
       </div>
     </div>
 
-    <div class="bottom-navbar position-fixed bottom-0 end-0 start-0 pt-1">
+    <div class="bottom-navbar position-fixed bg-white bottom-0 end-0 start-0 pt-1">
       <div class="d-flex w-100">
         <div class="w-100 text-center">
           <a class="bottom-navbar-link" href="#">

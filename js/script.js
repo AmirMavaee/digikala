@@ -277,3 +277,26 @@ divContainer.forEach(function (item, index) {
     }
   });
 });
+
+
+// category page mobile
+
+const kalaNameMobile = document.querySelectorAll(".categoryPage-mobile .kala-grouping ul li");
+const kalaNameMobileIcon = document.querySelectorAll(".categoryPage-mobile .kala-grouping ul li .kala-icon");
+const kalaNameMobiletext = document.querySelectorAll(".categoryPage-mobile .kala-grouping ul li span");
+kalaNameMobile.forEach(function(item , index){
+  item.addEventListener("click" , function(){
+
+    kalaNameMobile.forEach(function(element , elementIndex){
+      element.classList.remove("bg-white");
+      element.classList.remove("border-0");
+      kalaNameMobileIcon[elementIndex].style.color = "#3f4064";
+      kalaNameMobiletext[elementIndex].classList.remove("text-danger")
+    })
+
+    item.classList.add("bg-white");
+    item.classList.add("border-0");
+    kalaNameMobileIcon[index].style.color = "#ff0000";
+    kalaNameMobiletext[index].classList.add("text-danger")
+  })
+})
