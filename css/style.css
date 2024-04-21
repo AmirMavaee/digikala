@@ -34,7 +34,7 @@ body.bg-dark-50-kala-grouping::after{
     width: 100%;
     bottom: 0;
     right: 0;
-    height: calc(100% - 108px);
+    height: calc(100% - 168px);
     background-color: rgba(0, 0, 0, .5);
     z-index: 30;
 }
@@ -313,7 +313,7 @@ a{
 .header .menu .kala-grouping{
     max-height: 69vh; 
     top: 51px;
-    z-index: 20; 
+    z-index: 35; 
     direction: ltr; 
     box-shadow: 0 1px 1px rgba(0, 0, 0, .14), 0 4px 8px rgba(0, 0, 0, .3);
 }
@@ -325,7 +325,7 @@ a{
     background-color: #f5f5f5;
 }
 
-.header .menu .kala-grouping .kala-dec span {
+.header .menu .kala-grouping .kala-dec span{
     color: #008ebd;
     font-size: 12.5px;
 }
@@ -573,4 +573,19 @@ a{
 
 .categoryPage-mobile .kala-grouping ul::-webkit-scrollbar {
     display: none;
+}
+
+.categoryPage-mobile .kala-grouping .kala-dec span{
+    font-size: 11px;
+    color: #008ebd;
+    margin-bottom: 1rem;
+}
+
+.categoryPage-mobile .kala-grouping .kala-dec .kala-submenu p{
+    font-size: 12px;
+    border-bottom: 1px solid #f0f0f1;
+}
+
+.categoryPage-mobile .kala-grouping .kala-dec .kala-submenu p .submenu-icon{
+    transform: rotateX(180deg);
 }
