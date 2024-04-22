@@ -590,6 +590,9 @@ a{
 }
 
 .categoryPage-mobile .kala-grouping .kala-dec .kala-submenu p .submenu-icon{
+    transform: rotateX(0);
+}
+.categoryPage-mobile .kala-grouping .kala-dec .kala-submenu p .submenu-icon.close{
     transform: rotateX(180deg);
 }
 
@@ -600,9 +603,6 @@ a{
     gap: 6px;
 }
 
-/* .categoryPage-mobile .kala-grouping .kala-dec .kala-submenu .brand-container .grid-item{
-    padding: 20px;
-} */
 
 .categoryPage-mobile .kala-grouping .kala-dec .kala-submenu .brand-container .brand span{
     background-color: #f0f0f1;

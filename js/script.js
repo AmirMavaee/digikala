@@ -300,3 +300,16 @@ kalaNameMobile.forEach(function(item , index){
     kalaNameMobiletext[index].classList.add("text-danger")
   })
 })
+
+const categoryP = document.querySelector(".categoryPage-mobile .kala-grouping .kala-dec .kala-submenu p:first-child");
+const submenuIcon = document.querySelector(".categoryPage-mobile .kala-grouping .kala-dec .kala-submenu p:first-child .submenu-icon");
+const brandContainer = document.querySelector(".categoryPage-mobile .kala-grouping .kala-dec .kala-submenu .brand-container");
+categoryP.addEventListener("click" , function(){
+  brandContainer.classList.toggle("d-none")
+  if(brandContainer.classList.contains("d-none")){
+    submenuIcon.classList.add("close");
+  }
+  else{
+    submenuIcon.classList.remove("close");
+  }
+})
