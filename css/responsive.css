@@ -55,3 +55,26 @@
         display: block;
     }
 }
+
+@media (max-width : 360px) {
+    .header-menu .search-responsive-container .logo-responsive{
+        margin: auto 100px auto 0;
+    }
+    .header-menu .search-responsive-container input{
+        font-size: 10px;
+    }
+    .categoryPage-mobile .kala-grouping .kala-dec .kala-submenu p{
+        font-size: 10px;
+        padding-bottom: 1.5rem !important;
+    }
+
+    .categoryPage-mobile .kala-grouping .kala-dec span{
+        font-size: 9px;
+    }
+    .categoryPage-mobile .kala-grouping .kala-dec .kala-submenu .brand-container .brand div{
+        font-size: 8px;
+    }
+    .categoryPage-mobile .kala-grouping ul li{
+        font-size: 8px;
+    }
+}
