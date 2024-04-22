@@ -147,7 +147,7 @@ a{
     box-shadow: 0 1px 1px rgba(0, 0, 0, .14), 0 4px 4px rgba(0, 0, 0, .1);
     border: 1px solid rgba(0, 0, 0, .1);
     border-radius: .375rem;
-    z-index: 20;
+    z-index: 35;
     opacity: 0;
     visibility: hidden;
     transition: .15s linear;
@@ -480,7 +480,7 @@ a{
 /* bottom navbar */
 .bottom-navbar{
     display: none;
-    z-index: 30;
+    z-index: 50;
 }
 
 .bottom-navbar{
@@ -561,7 +561,7 @@ a{
 .categoryPage-mobile{
     max-height: calc(100% - 61px); 
     height: 100%;
-    z-index: 20;
+    z-index: 40;
 }
 
 .categoryPage-mobile .kala-grouping ul li {
@@ -622,4 +622,76 @@ a{
     font-size: 10px;
     margin-top: 7px;
     margin-bottom: 3px;
+}
+
+/* shopping cart */
+
+.shopping-cart{
+    z-index: 40;
+}
+
+.shopping-cart .shopping-cart-tab a{
+    font-size: 13px;
+    padding: 10px;
+    color: #81858b;
+}
+
+.shopping-cart .shopping-cart-tab a.active::before{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 4px;
+    background-color: #ff0000;
+    bottom: 0;
+    right: 0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.shopping-cart .digi-pluse{
+    background-color: #f0f0f1;
+}
+
+.shopping-cart .digi-pluse .digi-pluse-content{
+    border: 1px solid #b12ba4;
+}
+
+.shopping-cart .digi-pluse .digi-pluse-content h6{
+    font-size: 13px;
+}
+
+.shopping-cart .digi-pluse .digi-pluse-content ul{
+    list-style-type: disc  !important;
+}
+
+.shopping-cart .digi-pluse .digi-pluse-content ul li::marker{
+    color: #800080;
+}
+
+.shopping-cart .digi-pluse .digi-pluse-content ul li{
+    font-size: 11px;
+    color: #81858b ;
+}
+
+.shopping-cart .digi-pluse .digi-pluse-content button{
+    background-color: #b12ba4;
+    color: #fff;
+    outline: none;
+    border: none;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 12px 10px 15px;
+    border-radius: 7px;
+    margin-top: 18px;
+}
+
+.shopping-cart .shopping-cart-content h6{
+    margin: 28px 0 15px 0;
+}
+
+.shopping-cart .shopping-cart-content p{
+    font-size: 11px;
+    color: #62666d;
 }

@@ -18,7 +18,7 @@
   </head>
   <body>
     <header class="header">
-      <div class="header-gif d-none">
+      <div class="header-gif">
         <picture>
           <source
             media="(max-width: 1023px)"
@@ -1329,7 +1329,7 @@
     </main>
 
     <div
-      class="categoryPage-mobile position-absolute end-0 bottom-0 w-100 bg-white d-block"
+      class="categoryPage-mobile position-absolute end-0 bottom-0 w-100 bg-white d-none"
     >
       <div class="kala-grouping d-flex" style="height: calc(100% - 52px)">
         <div class="kal-name h-100">
@@ -1809,6 +1809,33 @@
             </p>
           </div>
         </div>
+      </div>
+    </div>
+
+    <div class="shopping-cart position-absolute end-0 bottom-0 w-100 h-100 bg-white">
+      <div class="shopping-cart-tab d-flex">
+        <a class="flex-grow-1 text-center position-relative active text-danger" href="javascript:void(0)">سبد خرید</a>
+        <a class="flex-grow-1 text-center position-relative" href="javascript:void(0)">خرید بعدی</a>
+      </div>
+      <div class="digi-pluse p-2 w-100">
+        <div class="digi-pluse-content position-relative bg-white rounded-3 p-3">
+          <img src="./assets/digiplus-purple.svg" alt="digi pluse" width="93" height="24">
+          <h6 class="my-3">خدمات ویژه با اشتراک دیجی‌پلاس</h6>
+          <ul>
+            <li>ارسال رایگان این سفارش و ۳ سفارش دیگر (در هرماه اشتراک)</li>
+            <li class="mt-2">مهلت بیشتر مرجوعی کالا تا ۳۰ روز (جز موبایل و کالای بهداشتی)</li>
+          </ul>
+          <button>
+            دریافت این خدمات ویژه
+            <iconify-icon class="ms-3" icon="icon-park-outline:left" width="1rem" height="1rem"  style="color: white"></iconify-icon>
+          </button>
+          <img class="position-absolute top-0 end-0" src="./assets/digiplus-purple-pattern.svg" alt="pattern">
+        </div>
+      </div>
+      <div class="shopping-cart-content text-center p-5">
+        <img src="./assets/empty-cart.svg" alt="empty-cart">
+        <h6>سبد خرید شما خالی است!</h6>
+        <p>می‌توانید برای مشاهده محصولات بیشتر به صفحات زیر بروید:</p>
       </div>
     </div>
 

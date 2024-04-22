@@ -313,3 +313,18 @@ categoryP.addEventListener("click" , function(){
     submenuIcon.classList.remove("close");
   }
 })
+
+
+// shopping cart
+const shoppingCartTabs = document.querySelectorAll(".shopping-cart .shopping-cart-tab a");
+console.log(shoppingCartTabs);
+shoppingCartTabs.forEach(function(item){
+  item.addEventListener("click",function(){
+    shoppingCartTabs.forEach(function(element){
+      element.classList.remove("active");
+      element.classList.remove("text-danger");
+    })
+    this.classList.add("active");
+    this.classList.add("text-danger");
+  })
+})
