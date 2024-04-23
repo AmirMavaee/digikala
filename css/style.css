@@ -687,11 +687,14 @@ a{
     margin-top: 18px;
 }
 
-.shopping-cart .shopping-cart-content h6{
+.shopping-cart .shopping-cart-content h6 , 
+#next-shop-container h6{
     margin: 28px 0 15px 0;
 }
 
-.shopping-cart .shopping-cart-content p{
+.shopping-cart .shopping-cart-content p , 
+#next-shop-container p{
     font-size: 11px;
     color: #62666d;
+    line-height: 2.3;
 }

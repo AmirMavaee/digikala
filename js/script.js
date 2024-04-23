@@ -268,12 +268,18 @@ divContainer.forEach(function (item, index) {
     navbarBottomText[index].classList.add("text-dark-bottom-navbar");
 
     if(item.innerText === "دسته‌بندی"){
+      document.querySelector(".shopping-cart").classList.add("d-none");
       document.querySelector(".header-gif").classList.add("d-none");
       document.querySelector(".categoryPage-mobile").classList.remove("d-none")
+    }
+    else if (item.innerText === "سبد خرید"){
+      document.querySelector(".categoryPage-mobile").classList.add("d-none")
+      document.querySelector(".shopping-cart").classList.remove("d-none");
     }
     else{
       document.querySelector(".header-gif").classList.remove("d-none")
       document.querySelector(".categoryPage-mobile").classList.add("d-none")
+      document.querySelector(".shopping-cart").classList.add("d-none");
     }
   });
 });
@@ -317,7 +323,6 @@ categoryP.addEventListener("click" , function(){
 
 // shopping cart
 const shoppingCartTabs = document.querySelectorAll(".shopping-cart .shopping-cart-tab a");
-console.log(shoppingCartTabs);
 shoppingCartTabs.forEach(function(item){
   item.addEventListener("click",function(){
     shoppingCartTabs.forEach(function(element){
@@ -326,5 +331,19 @@ shoppingCartTabs.forEach(function(item){
     })
     this.classList.add("active");
     this.classList.add("text-danger");
+
+    
+    const shoppingCartContainer = document.getElementById("shopping-cart-container");
+    const nextShopContainer = document.getElementById("next-shop-container");
+    if(item.innerText === "سبد خرید"){
+      shoppingCartContainer.classList.remove("d-none");
+      nextShopContainer.classList.add("d-none");
+    }
+    else{
+      shoppingCartContainer.classList.add("d-none");
+      nextShopContainer.classList.remove("d-none");
+    }
   })
 })
+
+

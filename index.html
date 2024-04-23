@@ -1326,7 +1326,12 @@
           <div class="swiper-pagination"></div>
         </div>
       </section>
+      <section class="product">
+        
+      </section>
     </main>
+
+
 
     <div
       class="categoryPage-mobile position-absolute end-0 bottom-0 w-100 bg-white d-none"
@@ -1812,30 +1817,37 @@
       </div>
     </div>
 
-    <div class="shopping-cart position-absolute end-0 bottom-0 w-100 h-100 bg-white">
+    <div class="shopping-cart position-absolute end-0 bottom-0 w-100 h-100 bg-white d-none">
       <div class="shopping-cart-tab d-flex">
         <a class="flex-grow-1 text-center position-relative active text-danger" href="javascript:void(0)">سبد خرید</a>
         <a class="flex-grow-1 text-center position-relative" href="javascript:void(0)">خرید بعدی</a>
       </div>
-      <div class="digi-pluse p-2 w-100">
-        <div class="digi-pluse-content position-relative bg-white rounded-3 p-3">
-          <img src="./assets/digiplus-purple.svg" alt="digi pluse" width="93" height="24">
-          <h6 class="my-3">خدمات ویژه با اشتراک دیجی‌پلاس</h6>
-          <ul>
-            <li>ارسال رایگان این سفارش و ۳ سفارش دیگر (در هرماه اشتراک)</li>
-            <li class="mt-2">مهلت بیشتر مرجوعی کالا تا ۳۰ روز (جز موبایل و کالای بهداشتی)</li>
-          </ul>
-          <button>
-            دریافت این خدمات ویژه
-            <iconify-icon class="ms-3" icon="icon-park-outline:left" width="1rem" height="1rem"  style="color: white"></iconify-icon>
-          </button>
-          <img class="position-absolute top-0 end-0" src="./assets/digiplus-purple-pattern.svg" alt="pattern">
+      <div id="shopping-cart-container">
+        <div class="digi-pluse p-2 w-100">
+          <div class="digi-pluse-content position-relative bg-white rounded-3 p-3">
+            <img src="./assets/digiplus-purple.svg" alt="digi pluse" width="93" height="24">
+            <h6 class="my-3">خدمات ویژه با اشتراک دیجی‌پلاس</h6>
+            <ul>
+              <li>ارسال رایگان این سفارش و ۳ سفارش دیگر (در هرماه اشتراک)</li>
+              <li class="mt-2">مهلت بیشتر مرجوعی کالا تا ۳۰ روز (جز موبایل و کالای بهداشتی)</li>
+            </ul>
+            <button>
+              دریافت این خدمات ویژه
+              <iconify-icon class="ms-3" icon="icon-park-outline:left" width="1rem" height="1rem"  style="color: white"></iconify-icon>
+            </button>
+            <img class="position-absolute top-0 end-0" src="./assets/digiplus-purple-pattern.svg" alt="pattern">
+          </div>
+        </div>
+        <div class="shopping-cart-content text-center p-5">
+          <img src="./assets/empty-cart.svg" alt="empty-cart">
+          <h6>سبد خرید شما خالی است!</h6>
+          <p>می‌توانید برای مشاهده محصولات بیشتر به صفحات زیر بروید:</p>
         </div>
       </div>
-      <div class="shopping-cart-content text-center p-5">
-        <img src="./assets/empty-cart.svg" alt="empty-cart">
-        <h6>سبد خرید شما خالی است!</h6>
-        <p>می‌توانید برای مشاهده محصولات بیشتر به صفحات زیر بروید:</p>
+      <div id="next-shop-container" class="d-none text-center py-5 px-4 border-bottom">
+        <img src="./assets/empty-sfl.webp" width="200" height="150" alt="empty-sfl">
+        <h6>لیست خرید بعدی شما خالی است!</h6>
+        <p>شما می‌توانید محصولاتی که به سبد خرید خود افزوده‌اید و فعلا قصد خرید آن‌ها را ندارید، در لیست خرید بعدی قرار داده و هر زمان مایل بودید آن‌ها را به سبد خرید اضافه کرده و خرید آن‌ها را تکمیل کنید.</p>
       </div>
     </div>
 
